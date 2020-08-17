@@ -36,7 +36,9 @@ tree.addRightNode(tree.root.right, 6)
 tree.addRightNode(tree.root.left, 4)
 
 
-//
+//O(n) solution where n is the number of nodes in the BST
+//We do a DFS traversal where we check each node to see whether it's a BST,
+//and if it is a BST, we check how many nodes there are
 
 function largestBSTSubtree(root) {
     if (!root) {
